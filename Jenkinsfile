@@ -8,6 +8,7 @@ pipeline {
             steps {
                 // This step checks out your Git repository
                git branch: 'main', credentialsId: 'eb780d03-dc76-426e-8a56-54c12392746c', url: 'https://github.com/vijay852/gettingstarted.git'
+                  }
             }
          stage("Build Docker Image"){
             steps{
